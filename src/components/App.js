@@ -24,7 +24,7 @@ class App extends React.Component {
     var requestAdditive = ""
     if (value[1] === "channel") {
       await YouTube.get(`channels?forUsername=${value[0]}&part=id`).then(response => {
-        if (response.data.items.length == 0) {
+        if (response.data.items.length === 0) {
           this.setState({ loading: false, error: true })
         } else {
           requestAdditive = `&channelId=${response.data.items[0].id}`

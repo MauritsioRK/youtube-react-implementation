@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Rating, Statistic } from 'semantic-ui-react';
-import YouTube from '../data/YouTube';
 
 class VideoDetailCard extends React.Component {
   state = {
